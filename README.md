@@ -3,10 +3,12 @@ FFMPEG is sometimes a pain to install. No more. This script will have a static b
 
 # How it works
 You will be asked what architecture you need. These are your options:
+```
     - 32bit
     - 64bit
     - armel-32bit
     - armhf-32bit
+```
 
 # How to run
 
