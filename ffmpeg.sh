@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "============="
 echo "Install FFMPEG"
-echo "What architecure for FFMPEG do you require?"
+echo "What architecture for FFMPEG do you require?"
 echo "If you don't know check your CPU specs for a hint."
 echo "- 32bit"
 echo "- 64bit"
