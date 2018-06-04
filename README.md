@@ -29,7 +29,7 @@ chmod +x ffmpeg.sh
 ./ffmpeg.sh
 ```
 
-5. Run `fffmpeg`
+5. Run `ffmpeg`
 ```
 ffmpeg
 ```
