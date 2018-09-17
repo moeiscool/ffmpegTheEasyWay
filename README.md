@@ -14,32 +14,22 @@ You will be asked what architecture you need. These are your options:
 
 1. Open Terminal
 
-2. Download the script
+2. Download and run the installer.
 ```
-wget https://raw.githubusercontent.com/moeiscool/ffmpegTheEasyWay/master/ffmpeg.sh
-```
-
-3. Make it executeable
-```
-chmod +x ffmpeg.sh
+bash <(curl -s https://gitlab.com/Shinobi-Systems/ffmpegTheEasyWay/raw/master/ffmpeg.sh)
 ```
 
-4. Run the installer. Pick your architecture.
+3. Test it.
 ```
-./ffmpeg.sh
-```
-
-5. Run `fffmpeg`
-```
-ffmpeg
+ffmpeg -hwaccels
 ```
 
 You should see something like this when you are done.
 
 ```
-ffmpeg version 3.3-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2017 the FFmpeg developers
-  built with gcc 5.4.1 (Debian 5.4.1-5) 20170205
-  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc-5 --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gray --enable-libass --enable-libfreetype --enable-libfribidi --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopus --enable-librtmp --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libxvid
+ffmpeg version 3.3.4-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 6.4.0 (Debian 6.4.0-4) 20170820
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc-6 --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gray --enable-libfribidi --enable-libass --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-librtmp --enable-libsoxr --enable-libspeex --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg
   libavutil      55. 58.100 / 55. 58.100
   libavcodec     57. 89.100 / 57. 89.100
   libavformat    57. 71.100 / 57. 71.100
@@ -48,6 +38,8 @@ ffmpeg version 3.3-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2
   libswscale      4.  6.100 /  4.  6.100
   libswresample   2.  7.100 /  2.  7.100
   libpostproc    54.  5.100 / 54.  5.100
+Hardware acceleration methods:
+cuvid
 ```
 
-Files are mirrored from the @ShinobiCCTV S3 Bucket. They were originally downloaded from https://johnvansickle.com/ffmpeg/
+Files are mirrored from https://cdn.shinobi.video. They were originally downloaded from https://johnvansickle.com/ffmpeg/
